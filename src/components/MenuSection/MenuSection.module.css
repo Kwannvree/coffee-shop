@@ -1,0 +1,23 @@
+.menu {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--sand) 100%);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 48px;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.intro {
+  max-width: 400px;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(40px, 6vw, 64px);
+}

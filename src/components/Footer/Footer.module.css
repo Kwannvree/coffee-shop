@@ -1,0 +1,98 @@
+.footer {
+  padding-top: clamp(64px, 9vw, 104px);
+  color: rgba(250, 247, 242, 0.68);
+  background: var(--espresso);
+}
+
+.brand {
+  display: inline-block;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.description {
+  max-width: 38ch;
+  margin-top: 22px;
+  line-height: 1.75;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(250, 247, 242, 0.18);
+  border-radius: 50%;
+  font-size: 17px;
+  color: var(--cream);
+  text-decoration: none;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.social:hover {
+  color: var(--espresso);
+  border-color: var(--beige);
+  background: var(--beige);
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: calc(0.22em * var(--tracking));
+  text-transform: uppercase;
+  color: var(--beige);
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  list-style: none;
+}
+
+.link {
+  color: rgba(250, 247, 242, 0.68);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--cream);
+}
+
+.hoursRow dt {
+  font-size: 13px;
+  color: rgba(250, 247, 242, 0.45);
+}
+
+.hoursRow dd {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: clamp(48px, 7vw, 80px);
+  padding-block: 28px;
+  border-top: 1px solid rgba(250, 247, 242, 0.1);
+  font-size: 13px;
+  color: rgba(250, 247, 242, 0.45);
+}

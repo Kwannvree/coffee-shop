@@ -1,0 +1,75 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 620px;
+}
+
+.center {
+  margin-inline: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  align-items: flex-start;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: calc(0.28em * var(--tracking));
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: currentColor;
+}
+
+.center .eyebrow::after {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: currentColor;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  line-height: 1.04;
+  letter-spacing: calc(-0.01em * var(--tracking));
+  color: var(--text);
+}
+
+.title em {
+  font-style: italic;
+  color: var(--brand-text);
+}
+
+.description {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.light .eyebrow {
+  color: var(--beige);
+}
+
+.light .title {
+  color: var(--cream);
+}
+
+.light .title em {
+  color: var(--beige);
+}
+
+.light .description {
+  color: rgba(250, 247, 242, 0.7);
+}

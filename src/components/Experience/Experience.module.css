@@ -1,0 +1,147 @@
+.experience {
+  position: relative;
+  overflow: hidden;
+  color: var(--cream);
+  background:
+    radial-gradient(circle at 85% 10%, rgba(166, 124, 82, 0.18), transparent 45%),
+    var(--espresso);
+}
+
+.media {
+  position: relative;
+  margin: 0;
+  padding-bottom: 48px;
+}
+
+.mainImage {
+  position: relative;
+  aspect-ratio: 5 / 6;
+  width: 88%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.insetImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 8px solid var(--espresso);
+  border-radius: var(--radius-lg);
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 1.4s var(--ease-out);
+}
+
+.media:hover .image {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 48%;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--beige);
+}
+
+.steps {
+  display: grid;
+  gap: 0;
+  margin: 44px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 20px;
+  padding-block: 24px;
+  border-top: 1px solid rgba(250, 247, 242, 0.12);
+  transition: padding-left 0.5s var(--ease-out);
+}
+
+.step:last-child {
+  border-bottom: 1px solid rgba(250, 247, 242, 0.12);
+}
+
+.step:hover {
+  padding-left: 8px;
+}
+
+.stepNumber {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-style: italic;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.stepTitle {
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+  color: var(--cream);
+}
+
+.stepText {
+  color: rgba(250, 247, 242, 0.68);
+}
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px 48px;
+  margin-top: clamp(64px, 9vw, 112px);
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid rgba(216, 195, 165, 0.28);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, rgba(166, 124, 82, 0.2), rgba(92, 64, 51, 0.08));
+}
+
+.promoEyebrow {
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: calc(0.26em * var(--tracking));
+  text-transform: uppercase;
+  color: var(--beige);
+}
+
+.promoTitle {
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.promoAside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.promoNote {
+  font-size: 14px;
+  color: rgba(250, 247, 242, 0.7);
+}
+
+.experience .promoButton {
+  background: var(--beige);
+  color: var(--ink);
+}
+
+.experience .promoButton:hover {
+  background: var(--cream) !important;
+  color: var(--ink) !important;
+}

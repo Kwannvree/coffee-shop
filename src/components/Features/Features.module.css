@@ -1,0 +1,79 @@
+.features {
+  background: var(--bg);
+}
+
+.grid {
+  margin-top: clamp(48px, 7vw, 72px);
+}
+
+.features .card {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  transition:
+    transform 0.5s var(--ease-out),
+    box-shadow 0.5s var(--ease-out),
+    background-color 0.5s ease;
+}
+
+.features .card :global(.ant-card-body) {
+  padding: clamp(32px, 4vw, 44px);
+}
+
+.features .card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-soft);
+}
+
+.number {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-style: italic;
+  line-height: 1;
+  color: var(--beige);
+  opacity: 0.55;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .number {
+  opacity: 1;
+}
+
+.iconWrap {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 32px;
+  border-radius: 50%;
+  color: var(--beige);
+  background: var(--coffee);
+  transition:
+    background-color 0.5s ease,
+    transform 0.6s var(--ease-out);
+}
+
+.card:hover .iconWrap {
+  background: var(--accent);
+  transform: rotate(-12deg) scale(1.05);
+}
+
+.icon {
+  font-size: 26px;
+}
+
+.title {
+  margin-bottom: 14px;
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.description {
+  color: var(--muted);
+}
